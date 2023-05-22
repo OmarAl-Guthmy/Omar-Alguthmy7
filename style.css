@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #1c1d21;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.no-text-shadow {
+  text-shadow: none;
+}  
+
+section {
+  padding: 0;
+  margin-bottom: 50px;
+  background-color: #1c1d21;
+}
+
+header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001; /* Updated z-index value to keep the header above the modal */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+.header-title {
+  font-size: 1.8rem; /* Adjust the value to your desired size */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+header a {
+  font-size: 1.8rem; /* Adjust the value to your desired size */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    height: auto;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+#banner h1 {
+  color: #fff;
+  font-size: 5.6rem;
+  text-align: center;
+  text-shadow: 2px 2px #333;
+}
+
+#banner p {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+li h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+li p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.project {
+  width: 48%;
+  background-color: #1c1d21;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.project-info {
+  color: #ffffff;
+}
+
+#projects h2 {
+  color: #fff;
+}
+
+.project-info ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}  
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 30px 0;
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-column {
+  width: 48%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}  
+
+.skills-column h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skills-column ul {
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.skills-column ul li {
+  margin-bottom: 10px;
+}
+
+#skills {
+  background-color: #fff;
+  color: #000;
+}
+
+#skills h3,
+#skills ul li {
+  color: #000;
+}  
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  header a {
+    margin-bottom: 10px;
+  }
+
+  #banner {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  #projects .row {
+    flex-direction: column;
+  }
+
+  #projects .project {
+    margin: 0 0 30px;
+  }
+
+  #projects .video-container {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+  #projects .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #projects .project-info {
+    padding: 20px;
+  }
+
+  #projects .project-info h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  #projects .project-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  #projects .project-info ul li {
+    margin-bottom: 10px;
+  }
+
+  #skills ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #skills li {
+    margin-bottom: 20px;
+  }
+
+  #about p {
+    font-size: 1.5rem;
+  }
+} 
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 60px; /* Adjust the top position to make room for the header */
+  width: 100%;
+  height: calc(100% - 60px); /* Subtract the height of the header */
+  overflow: auto;
+  background-color: #1c1d21;
+}
+
+.modal-content {
+  background-color: #1c1d21; /* change the background color */
+  color: #ffffff; /* change the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* apply a text shadow */
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif; /* apply the same font */
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.modal-content,
+.modal-backdrop {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.image-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#about h2 {
+  color: white;
+}
+
+#about-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+#about-contact .about-me,
+#about-contact .contact-me {
+  flex-basis: 45%;
+  color: #fff;
+}
+
+#about-contact .contact-me .social-icons img {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  filter: invert(1);
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.about-me img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me-text {
+  margin-bottom: 50px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: #ffffff;
+  margin: 30px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+#banner {
+  position: relative;
+  height: 400px;
+}
+
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.expand-video {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+.expand-video:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+/* More information page */
+.more-info-link {
+  display: inline-block;
+  padding: 2px 8px;
+  color: #ff4649; /* You can adjust this color to match your website */
+  border: 0.5px solid #ff4649; /* This color should match the text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-link:hover {
+  color: #fff;
+  background-color: #ff4649; /* The background color should match the border color */
+}
+
+ul {
+  list-style-type: disc;
+  color: white;
+}
+
+/* CSS for desktops and larger screens */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+/* CSS for tablets and medium-sized screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+/* CSS for mobile devices and small screens */
+@media (max-width: 480px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
