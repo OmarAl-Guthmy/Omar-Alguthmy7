@@ -522,16 +522,16 @@ body {
 }
 
 #qa {
-  background-color: #800000;
-  color: #ffffff;
-  padding: 50px 0;
+  background-color: #333;
+  color: #333;
+  padding: 7px 0;
 }
 
 #qa h2 {
   color: #ffffff;
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 50px;
+  margin-bottom: 1px;
 }
 
 .qa-item {
@@ -558,3 +558,12 @@ body {
 .bug-report-link {
   color: #ff0000;
 }
+
+.qa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
