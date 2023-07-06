@@ -13,13 +13,13 @@
       color: #333;
       font-size: 1.2rem;
       margin: 0;
-      border: 5px solid #ffffff; /* Add a border to the whole body */
+      border: 5px solid #ffffff;
     }
-
+  
     h1, h2, h3 {
       color: #ffffff;
     }
-
+  
     h1 {
       font-size: 1.8rem;
       margin: 60px 0 60px 0;
@@ -27,61 +27,61 @@
       text-align: left;
       border-bottom: 2px solid #ffffff;
     }
-
+  
     h2 {
       font-size: 1.6rem;
       margin-bottom: 10px;
       text-decoration: underline;
     }
-
+  
     h3 {
       font-size: 1.4rem;
       margin-bottom: 10px;
     }
-
+  
     p, li {
       color: #ffffff;
     }
-
+  
     ul, ol {
       margin-bottom: 20px;
     }
-
-     /* New styles for smaller screens */
-  @media (max-width: 600px) {
-    body {
-      font-size: 1rem;
-      padding: 10px;
+  
+    #google_translate_element {
+      display: inline-block;
     }
-
-    h1 {
-      font-size: 1.6rem;
-      margin: 30px 0 30px 0;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-    }
-
-    h3 {
-      font-size: 1.2rem;
-    }
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  @media (max-width: 600px) {
-    /* Existing styles */
-
+  
     img {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
     }
-  }
-
+  
+    /* New styles for smaller screens */
+    @media (max-width: 600px) {
+      body {
+        font-size: 1rem;
+        padding: 10px;
+      }
+  
+      h1 {
+        font-size: 1.6rem;
+        margin: 30px 0 30px 0;
+      }
+  
+      h2 {
+        font-size: 1.4rem;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+      }
+  
+      img, #google_translate_element {
+        width: 100%;
+      }
+    }
   </style>
+  
 </head>
 <body>
   <div id="google_translate_element"></div>
